@@ -13,7 +13,7 @@
 #include <iostream>
 
 struct sortclass {
-  bool operator() ( Individual i, Individual j) { return (i.qualityCriteria > j.qualityCriteria);}
+  bool operator() ( Individual i, Individual j) { return (i.getQualityCriteria() > j.getQualityCriteria());}
 } mysort;
 
 
@@ -31,8 +31,6 @@ public :
   //cross the induvudual of the population
   void crossPopulation();
   
-  //mutate the individual of the population
-  void mutatePopulation();
   
   //selection of individuals
   void selectIndividuals();
@@ -47,6 +45,9 @@ public :
   //idividual class
   std::vector<Individual> theInd;
   
+  
+  int nindividuals;
+  
   void displayPolulation(){
     
     for(unsigned int i=0; i<theInd.size(); i++){
@@ -58,8 +59,7 @@ public :
       for(unsigned int j=0; j< thegenesv.size(); j++){
         cout << "  " << thegenesv[j] ;
       }
-      cout << "  " << endl;
-      cout << "  the qual : " << thequalv << endl;
+      cout << "   the qual : " << thequalv << endl;
     }
   }
   
