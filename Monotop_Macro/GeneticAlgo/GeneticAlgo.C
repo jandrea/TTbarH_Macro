@@ -52,7 +52,7 @@ void GeneticAlgo::crossPopulation(){
     
   }
   //cout << "[crossPopulation] total quality is " << total_quality << endl;
- 
+  cout << "[crossPopulation] nindividuals " << nindividuals << endl;
   for(int k=0; k<  nindividuals; k++){
     for(unsigned int i=0; i<theInd.size(); i++){
       if(  rand.Uniform(total_quality) < theInd[i].getQualityCriteria()   ){
@@ -71,7 +71,7 @@ void GeneticAlgo::crossPopulation(){
     
       double theSingleGen = (theInd_tomix[ int(rand.Uniform(theInd_tomix.size()))].getGenes())[j];
       
-      if(rand.Uniform() > 0.75){
+      if(rand.Uniform() > 0.50){
         theSingleGen = rand.Gaus(theSingleGen, theSingleGen*0.50);
 	if(j==0 && theSingleGen < 33) theSingleGen = 33;
 	if(j==1 && theSingleGen < 30) theSingleGen = 30;
@@ -93,8 +93,8 @@ void GeneticAlgo::crossPopulation(){
 void GeneticAlgo::selectIndividuals(){
   
   
-  cout << "nindividuals " << nindividuals<< endl;
-  cout << "theInd.size() " <<theInd.size() << endl;
+  cout << "[selectIndividuals] nindividuals " << nindividuals<< endl;
+  cout << "[selectIndividuals] theInd.size() " <<theInd.size() << endl;
   std::vector<Individual> theInd_truncated ;
   if(nindividuals < theInd.size() ){
     for(unsigned int i=0; i< nindividuals; i++){

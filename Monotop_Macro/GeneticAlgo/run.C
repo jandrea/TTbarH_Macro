@@ -10,7 +10,7 @@
   RunOptimization thopt(150);
   thopt.sortIndividuals();
   thopt.displayPopulation();
-  for(int i=0; i<20; i++){
+  for(int i=0; i<15; i++){
     cout << "calculation for generation " << i+1 << endl;
     //---------------------
     //create new population

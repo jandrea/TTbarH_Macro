@@ -3,7 +3,7 @@
 
 RunOptimization::RunOptimization(){
 
-  theGenAlgo.createPopulation(150);
+  theGenAlgo.createPopulation(0);
   
 }
 
