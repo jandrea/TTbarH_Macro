@@ -1,0 +1,22 @@
+<p>Rates for all observables and processes as given by the 'nominal' templates. If errors are given, they are MC stat. uncertainties.</p>
+<table cellpadding="2" border="1">
+<tr><th>process / observable</th><th>NJetsNBJetsemuafterZsel</th></tr>
+<tr><td>TTW</td><td>72.922 +/- 1.3921</td></tr>
+<tr><td>TTZ</td><td>50.984 +/- 1.0235</td></tr>
+<tr><td>TTljets</td><td>636.02 +/- 11.022</td></tr>
+<tr><td>WW</td><td>8728.6 +/- 22.98</td></tr>
+<tr><td>WZ</td><td>389.95 +/- 2.2618</td></tr>
+<tr><td>ZZ</td><td>32.531 +/- 0.16801</td></tr>
+<tr><td>Zjets</td><td>31216 +/- 266.51</td></tr>
+<tr><td>barsChan</td><td>1.3872 +/- 0.60284</td></tr>
+<tr><td>bartChan</td><td>20.816 +/- 2.5957</td></tr>
+<tr><td>bartW</td><td>2374.6 +/- 34.113</td></tr>
+<tr><td>sChan</td><td>2.0588 +/- 0.84819</td></tr>
+<tr><td>tChan</td><td>47.969 +/- 3.8853</td></tr>
+<tr><td>tW</td><td>2346.3 +/- 33.039</td></tr>
+<tr><td>tZq</td><td>3.3945 +/- 0.019613</td></tr>
+<tr><td><b>total background</b></td><td>45923 +/- 271.96</td></tr>
+<tr><td>TT</td><td>48746 +/- 94.706</td></tr>
+<tr><td><b>DATA</b></td><td>1.0173e+05</td></tr>
+</table>
+

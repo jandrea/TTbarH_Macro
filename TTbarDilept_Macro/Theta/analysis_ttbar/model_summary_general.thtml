@@ -1,0 +1,46 @@
+<p>Observables (xmin, xmax, nbins):</p>
+<ul>
+<li>NJetsNBJetsemuafterZsel (-0.5, 14.5, 15)</li>
+</ul>
+<p>Background processes:</p>
+<ul>
+<li>TTW</li>
+<li>TTZ</li>
+<li>TTljets</li>
+<li>WW</li>
+<li>WZ</li>
+<li>ZZ</li>
+<li>Zjets</li>
+<li>barsChan</li>
+<li>bartChan</li>
+<li>bartW</li>
+<li>sChan</li>
+<li>tChan</li>
+<li>tW</li>
+<li>tZq</li>
+</ul>
+<p>Signal processes:</p><ul>
+<li>TT</li>
+</ul>
+<p>Nuisance parameters (includes only those which apply to the background-only model):</p>
+<ul>
+<li>TTZ_rate (rate only)</li>
+<li>TTljets_rate (rate only)</li>
+<li>WW_rate (rate only)</li>
+<li>WZ_rate (rate only)</li>
+<li>ZZ_rate (rate only)</li>
+<li>Zjets_rate (rate only)</li>
+<li>barsChan_rate (rate only)</li>
+<li>bartChan_rate (rate only)</li>
+<li>bartW_rate (rate only)</li>
+<li>btag (morph only)</li>
+<li>jer (morph only)</li>
+<li>jes (morph only)</li>
+<li>lept (morph only)</li>
+<li>lumi (rate only)</li>
+<li>mistag (morph only)</li>
+<li>sChan_rate (rate only)</li>
+<li>tChan_rate (rate only)</li>
+<li>tW_rate (rate only)</li>
+<li>toppt (morph only)</li>
+</ul>

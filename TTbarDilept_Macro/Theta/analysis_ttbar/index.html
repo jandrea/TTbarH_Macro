@@ -1,0 +1,182 @@
+<?xml version="1.0" ?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head><title>theta-auto Report</title>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+    <style type="text/css">
+    body {margin: 30px; font-family: Verdana, Arial, sans-serif; font-size: 12px; background:#eee;}
+    h1, h2, h3 { padding: 0.2ex; padding-left:.8ex;}
+    h1 {font-size: 150%%; background: #d44;}
+    h2 {font-size: 110%%; background: #f88; padding-left:1.3ex;}
+    h3 {font-size: 100%%; background: #aaa; padding-left:1.3ex;}
+    .inner {padding-left: 3ex;}
+    a img{ border: none;}
+    p {margin:0 0 0 0; margin-top: 1.3ex;}
+    ul {margin:0 0 0 0;}
+    </style>
+    </head><body>
+    <p>Hint: click on top-level headers to toggle visibility of that section.</p>
+    <h1 onclick=$('div1').toggle()>1. General Model Info</h1><div class="inner" id="div1">
+<p>Observables (xmin, xmax, nbins):</p>
+<ul>
+<li>NJetsNBJetsemuafterZsel (-0.5, 14.5, 15)</li>
+</ul>
+<p>Background processes:</p>
+<ul>
+<li>TTW</li>
+<li>TTZ</li>
+<li>TTljets</li>
+<li>WW</li>
+<li>WZ</li>
+<li>ZZ</li>
+<li>Zjets</li>
+<li>barsChan</li>
+<li>bartChan</li>
+<li>bartW</li>
+<li>sChan</li>
+<li>tChan</li>
+<li>tW</li>
+<li>tZq</li>
+</ul>
+<p>Signal processes:</p><ul>
+<li>TT</li>
+</ul>
+<p>Nuisance parameters (includes only those which apply to the background-only model):</p>
+<ul>
+<li>TTZ_rate (rate only)</li>
+<li>TTljets_rate (rate only)</li>
+<li>WW_rate (rate only)</li>
+<li>WZ_rate (rate only)</li>
+<li>ZZ_rate (rate only)</li>
+<li>Zjets_rate (rate only)</li>
+<li>barsChan_rate (rate only)</li>
+<li>bartChan_rate (rate only)</li>
+<li>bartW_rate (rate only)</li>
+<li>btag (morph only)</li>
+<li>jer (morph only)</li>
+<li>jes (morph only)</li>
+<li>lept (morph only)</li>
+<li>lumi (rate only)</li>
+<li>mistag (morph only)</li>
+<li>sChan_rate (rate only)</li>
+<li>tChan_rate (rate only)</li>
+<li>tW_rate (rate only)</li>
+<li>toppt (morph only)</li>
+</ul>
+
+</div>
+<h1 onclick=$('div2').toggle()>2. Rate Summary</h1><div class="inner" id="div2">
+<p>Rates for all observables and processes as given by the 'nominal' templates. If errors are given, they are MC stat. uncertainties.</p>
+<table cellpadding="2" border="1">
+<tr><th>process / observable</th><th>NJetsNBJetsemuafterZsel</th></tr>
+<tr><td>TTW</td><td>72.922 +/- 1.3921</td></tr>
+<tr><td>TTZ</td><td>50.984 +/- 1.0235</td></tr>
+<tr><td>TTljets</td><td>636.02 +/- 11.022</td></tr>
+<tr><td>WW</td><td>8728.6 +/- 22.98</td></tr>
+<tr><td>WZ</td><td>389.95 +/- 2.2618</td></tr>
+<tr><td>ZZ</td><td>32.531 +/- 0.16801</td></tr>
+<tr><td>Zjets</td><td>31216 +/- 266.51</td></tr>
+<tr><td>barsChan</td><td>1.3872 +/- 0.60284</td></tr>
+<tr><td>bartChan</td><td>20.816 +/- 2.5957</td></tr>
+<tr><td>bartW</td><td>2374.6 +/- 34.113</td></tr>
+<tr><td>sChan</td><td>2.0588 +/- 0.84819</td></tr>
+<tr><td>tChan</td><td>47.969 +/- 3.8853</td></tr>
+<tr><td>tW</td><td>2346.3 +/- 33.039</td></tr>
+<tr><td>tZq</td><td>3.3945 +/- 0.019613</td></tr>
+<tr><td><b>total background</b></td><td>45923 +/- 271.96</td></tr>
+<tr><td>TT</td><td>48746 +/- 94.706</td></tr>
+<tr><td><b>DATA</b></td><td>1.0173e+05</td></tr>
+</table>
+
+
+</div>
+<h1 onclick=$('div3').toggle()>3. Rate Impact of Systematic Uncertainties</h1><div class="inner" id="div3">
+<p>The table below summarises the impact of an nuisance parameter on the rate prediction of a process.</p>
+    <p>For a nuisance parameter, (gauss) indicates that this nuisance parameter has a gaussian prior, (gamma) that it has a gamma prior.</p>
+    <p>For the individual cells, (r) indicates the 'rate only' part of the uncertainty, (s) indicates the effect on the rate of an uncertainty
+    treated via template morphing (i.e., the <em>rate</em> effect of an uncertainty treated as part of the
+    template morphing; even if this is zero, the shape effect is still taken into account). Note that both effects are applied seperatly, so
+    the total rate change is about the linear sum of these two.<br/>
+    The rate change in 'plus' direction of the uncertainty is written as superscript,
+    the 'minus' direction as subscript.<br/>All numbers are in percent.</p>
+<h2>Observable 'NJetsNBJetsemuafterZsel'</h2>
+<table cellpadding="2" border="1">
+<tr><th>process / nuisance parameter</th><th>TTZ_rate (gauss)</th><th>TTljets_rate (gauss)</th><th>WW_rate (gauss)</th><th>WZ_rate (gauss)</th><th>ZZ_rate (gauss)</th><th>Zjets_rate (gauss)</th><th>barsChan_rate (gauss)</th><th>bartChan_rate (gauss)</th><th>bartW_rate (gauss)</th><th>btag (gauss)</th><th>fixedmatching (gauss)</th><th>fixedscale (gauss)</th><th>jer (gauss)</th><th>jes (gauss)</th><th>lept (gauss)</th><th>lumi (gauss)</th><th>matching (gauss)</th><th>mistag (gauss)</th><th>sChan_rate (gauss)</th><th>scale (gauss)</th><th>tChan_rate (gauss)</th><th>tW_rate (gauss)</th><th>toppt (gauss)</th></tr>
+<tr><td>TT</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>+0.00</sub> (s) </td><td>&#xb1;1.49 (r)</td><td>&#xb1;1.51 (r)</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.66</sup><sub>-0.66</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.83</sup><sub>+1.49</sub> (s) </td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td><sup>+1.51</sup><sub>+0.64</sub> (s) </td><td>---</td><td>---</td><td><sup>-1.01</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>TTW</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.74</sup><sub>-0.75</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.01</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>TTZ</td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.69</sup><sub>-0.70</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>-0.00</sub> (s) </td></tr>
+<tr><td>TTljets</td><td>---</td><td>&#xb1;100.00 (r)</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>+0.00</sub> (s) </td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.80</sup><sub>-0.80</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.01</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-2.86</sup><sub>-0.00</sub> (s) </td></tr>
+<tr><td>WW</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.74</sup><sub>-0.74</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>WZ</td><td>---</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.82</sup><sub>-0.82</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>-0.00</sub> (s) </td></tr>
+<tr><td>ZZ</td><td>---</td><td>---</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.90</sup><sub>-0.90</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>-0.00</sub> (s) </td></tr>
+<tr><td>Zjets</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>&#xb1;9900.00 (r)</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+1.25</sup><sub>-1.24</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>barsChan</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.72</sup><sub>-0.72</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>+0.01</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>bartChan</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.01</sup><sub>+0.00</sub> (s) </td><td><sup>-0.01</sup><sub>+0.00</sub> (s) </td><td><sup>+0.89</sup><sub>-0.89</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>bartW</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>+0.00</sub> (s) </td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.69</sup><sub>-0.69</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>-0.00</sub> (s) </td></tr>
+<tr><td>sChan</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.50</sup><sub>-0.50</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>+0.00</sub> (s) </td></tr>
+<tr><td>tChan</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-0.01</sup><sub>-0.01</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.01</sup><sub>-0.01</sub> (s) </td><td><sup>-0.00</sup><sub>-0.01</sub> (s) </td><td><sup>+0.92</sup><sub>-0.93</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.01</sup><sub>-0.01</sub> (s) </td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td><sup>-100.00</sup><sub>-0.01</sub> (s) </td></tr>
+<tr><td>tW</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.01</sub> (s) </td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.01</sub> (s) </td><td><sup>+0.00</sup><sub>+0.01</sub> (s) </td><td><sup>+0.69</sup><sub>-0.69</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td><sup>-100.00</sup><sub>-0.00</sub> (s) </td></tr>
+<tr><td>tZq</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.73</sup><sub>-0.73</sub> (s) </td><td>&#xb1;2.60 (r)</td><td>---</td><td><sup>-0.00</sup><sub>-0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>-100.00</sup><sub>-0.00</sub> (s) </td></tr>
+</table>
+
+
+</div>
+<h1 onclick=$('div4').toggle()>4. Nuisance Parameter Priors</h1><div class="inner" id="div4">
+
+    <p>The priors for the nuisance parameters are either Gaussian or gamma distributions. As limit cases, these can have with=0 or width=inf
+    which makes them delta or flat distributions, respectively.</p>
+    <div class="inner"><h3>Prior Parameters</h3>
+<table cellpadding="2" border="1">
+<tr><th>parameter</th><th>distribution type</th><th>distribution parameters</th></tr>
+<tr><td>tChan_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>bartW_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>mistag</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>matching</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jer</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jes</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>scale</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>TTljets_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>TTZ_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>lept</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>fixedscale</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>bartChan_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>sChan_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>toppt</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>ZZ_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>lumi</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>fixedmatching</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>btag</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>barsChan_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>WZ_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>WW_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>Zjets_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>tW_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+</table>
+
+</div>
+    </div>
+</div>
+<h1 onclick=$('div5').toggle()>5. Basic Model Plots</h1><div class="inner" id="div5">
+<h2>Stackplots</h2>
+<p>Everything normalized to expectation, i.e., to the normalization in the template input file, possibly scaled via the python script file.</p>
+<p>Color Code:</p><ul>
+<li><span style="background: #ef2929;">&nbsp;&nbsp;&nbsp;</span> TT</li>
+<li><span style="background: #edd400;">&nbsp;&nbsp;&nbsp;</span> TTW</li>
+<li><span style="background: #f57900;">&nbsp;&nbsp;&nbsp;</span> TTZ</li>
+<li><span style="background: #c17d11;">&nbsp;&nbsp;&nbsp;</span> TTljets</li>
+<li><span style="background: #73d216;">&nbsp;&nbsp;&nbsp;</span> WW</li>
+<li><span style="background: #3465a4;">&nbsp;&nbsp;&nbsp;</span> WZ</li>
+<li><span style="background: #75507b;">&nbsp;&nbsp;&nbsp;</span> ZZ</li>
+<li><span style="background: #d3d7cf;">&nbsp;&nbsp;&nbsp;</span> Zjets</li>
+<li><span style="background: #555753;">&nbsp;&nbsp;&nbsp;</span> barsChan</li>
+<li><span style="background: #edd400;">&nbsp;&nbsp;&nbsp;</span> bartChan</li>
+<li><span style="background: #f57900;">&nbsp;&nbsp;&nbsp;</span> bartW</li>
+<li><span style="background: #c17d11;">&nbsp;&nbsp;&nbsp;</span> sChan</li>
+<li><span style="background: #73d216;">&nbsp;&nbsp;&nbsp;</span> tChan</li>
+<li><span style="background: #3465a4;">&nbsp;&nbsp;&nbsp;</span> tW</li>
+<li><span style="background: #75507b;">&nbsp;&nbsp;&nbsp;</span> tZq</li>
+</ul>
+<p>Observable 'NJetsNBJetsemuafterZsel':<br /><img src="plots/NJetsNBJetsemuafterZsel_stack.png" /></p>
